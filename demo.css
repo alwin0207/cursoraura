@@ -1,0 +1,51 @@
+*{
+    background-color: green; 
+}
+
+
+#background{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#background::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 30vw;
+  height: 100vh;
+}
+
+#background::after{
+  content: "";
+  position: absolute;
+  width: 30vw;
+  border-right: 20vw solid transparent;
+  border-top: 100vh solid black;
+  }
+  
+
+  #backgroundeffect{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#backgroundeffect::before{
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 30vw;
+  height: 100vh;
+}
+
+#backgroundeffect::after{
+  content: "";
+  position: absolute;
+  width: 30vw;
+  border-right: 20vw solid transparent;
+  border-top: 100vh solid white;
+  }

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+
+#background{
+    background-image: url("401808-PD1BD8-811.jpg");
+    cursor: none; /*Just for presenting. Remove for real use*/
+    
+    /* Use a relative size (vh/vw) for the div itself and its background in order to make background alignment 
+    of #container and #backgroundeffect easier */
+    
+    height: 100vh;
+    width: 100vw;
+    background-size: 100vw 100vh;
+}
+
+#backgroundeffect{
+
+
+    position: relative; /*important for lining up backgrounds*/
+    top: 10vh; /* used for testing. These values will be overruled by javascript*/
+    left: 20vw; /* used for testing. These values will be overruled by javascript*/
+    background-image: url("hi.jpg"); /*same image as background*/
+    background-origin: border-box;
+    background-size: 100vw 100vh;
+    filter: invert(100%);
+    background-position-x: -20vw; /* background position is (negatief evenredig ofzo(Kan niet op het woord komen)) with the container position to create a layered background illusion*/
+    background-position-y: -10vh;
+    height: 100px;
+    width: 100px;
+    border: 0px solid red; /*using a 0px radius border for turning div into a circle (just in view, it is still a rectangle)*/
+    border-radius: 50%;
+    
+    
+}
+
